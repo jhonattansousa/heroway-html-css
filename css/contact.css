@@ -1,0 +1,49 @@
+.section-contact {
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+
+}
+
+.section-contact > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 60px 20px;
+
+}
+
+.section-contact > .container h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.section-contact > .container > .content {
+    display: flex;
+    color: #2C3E50;
+
+    margin: 10px 50px;
+    flex-direction: column; 
+    padding: 5px;
+    align-self: flex-start
+}
+
+.section-contact > .container > .content label {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.section-contact > .container button {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #D40A44;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
