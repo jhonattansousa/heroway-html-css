@@ -30,3 +30,36 @@
     text-transform: uppercase;
 }
 
+.star-portfolio {
+    margin: 50px 0;
+    color:  #2C3E50;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid  #2C3E50;
+    border-left: 50px solid transparent;
+    transform: rotate(180deg);
+  }
+.star-portfolio:before {
+    position: absolute;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid  #2C3E50;
+    border-left: 50px solid transparent;
+    transform: rotate(70deg);
+    content: '';
+    left: -50px;
+  }
+  
+.star-portfolio:after {
+    position: absolute;
+    display: block;
+    color: #2C3E50;
+    top: 3px;
+    left: -48px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid  #2C3E50;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+    left: -50px
+}

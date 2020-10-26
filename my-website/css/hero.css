@@ -27,3 +27,38 @@
     font-size: 60px;
     text-transform: uppercase;
 }
+
+.star-hero {
+    margin: 50px 0;
+    color: #fff;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #fff;
+    border-left: 50px solid transparent;
+    transform: rotate(180deg);
+  }
+.star-hero:before {
+    position: absolute;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #fff;
+    border-left: 50px solid transparent;
+    transform: rotate(70deg);
+    content: '';
+    left: -50px;
+  }
+  
+.star-hero:after {
+    position: absolute;
+    display: block;
+    color:#fff;
+    top: 3px;
+    left: -48px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #fff;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+    left: -50px
+}
+
