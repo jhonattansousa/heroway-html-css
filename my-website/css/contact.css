@@ -19,6 +19,7 @@
 
 .section-contact > .container h3 {
     font-size: 30px;
+    padding: 50px;
     text-transform: uppercase;
     margin-bottom: -50px;
     color: #2C3E50;
@@ -49,35 +50,60 @@
 }
 
 .star-contact {
-    margin: 50px 0;
-    color: #2C3E50;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(180deg);
-  }
+    position: relative;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid  #2C3E50;
+    border-left:   .3em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 24px;
+}
+
 .star-contact:before {
-    position: absolute;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(70deg);
     content: '';
-    left: -50px;
-  }
+    
+    display: block;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: .6em;
+    left: -1em;
+  
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #2C3E50;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+}
   
 .star-contact:after {
-    position: absolute;
-    display: block;
-    color:#2C3E50;
-    top: 3px;
-    left: -48px;
-    width: 0px;
-    height: 0px;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(-70deg);
     content: '';
-    left: -50px
+      
+    display: block;
+    width: 0;
+    height: 0;
+      
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid  #2C3E50;
+    border-left:   1em solid transparent;
+    
+    transform: rotate(-35deg);
+}
+
+.star-contact:after {  
+    transform: rotate(35deg);
 }
