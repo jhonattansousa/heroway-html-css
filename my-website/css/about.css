@@ -17,16 +17,16 @@
 .section-about > .container h3 {
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: -50px;
 }
 
-.section-hero {
+.section-about {
     height: 500px;
     background-color: #D40A44;
     display: flex;
 }
 
-.section-hero > .container {
+.section-about > .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,77 +38,18 @@
     color: #fff;
 }
 
-.section-hero > .container > img {
-    width: 200px;
-    height: 200px;
+.section-about > .container > img {
+    color: #fff;
+    width: 100px;
+    height: 50px;
     margin: 10px 0;
 }
 
-.section-hero > .container > h2 {
+.section-about > .container > h2 {
     margin: 50px;
     font-size: 60px;
     text-transform: uppercase;
 }
-
-.star-about {
-    position: relative;
-    
-    display: inline-block;
-    width: 0;
-    height: 0;
-    
-    margin-left: .9em;
-    margin-right: .9em;
-    margin-bottom: 1.2em;
-    
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #fff;
-    border-left:   .3em solid transparent;
-  
-    /* Controlls the size of the stars. */
-    font-size: 24px;
-}
-
-.star-about:before {
-    content: '';
-    
-    display: block;
-    width: 0;
-    height: 0;
-    
-    position: absolute;
-    top: .6em;
-    left: -1em;
-  
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #fff;
-    border-left:   1em solid transparent;
-  
-    transform: rotate(-35deg);
-}
-  
-.star-about:after {
-    content: '';
-      
-    display: block;
-    width: 0;
-    height: 0;
-      
-    position: absolute;
-    top: .6em;
-    left: -1em;
-    
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #fff;
-    border-left:   1em solid transparent;
-    
-    transform: rotate(-35deg);
-}
-
-.star-about:after {  
-    transform: rotate(35deg);
-}
-
 
 .section-about > .container .content {
     display: flex;
@@ -118,6 +59,76 @@
 .section-about > .container .content div {
     padding: 20px;
 }
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0 0 0;
+    
+}
+
+.star > .line-star {
+    margin: 0 10px;
+    width: 110px;
+    height: 2px;
+    background-color: white;
+}    
+
+.fa, .fas {
+    font-weight: 900;
+}
+<style>
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+<style>
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0 0 0;
+}
+.section-about > .container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+body, html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+<style>
+.fa-star:before {
+    content: "\f005";
+}
+
 
 .section-about > .container button {
     color: #fff;
@@ -134,7 +145,7 @@
 
 @media (max-width: 599px) {
     .section-about {
-        background-color: blue;
+        background-color: #D40A44;
     }
 
     .section-about > .container .content {

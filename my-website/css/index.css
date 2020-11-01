@@ -5,9 +5,8 @@
 @import 'about.css';
 @import 'port.css';
 @import 'contact.css';
-
-
-
+@import 'social.css';
+@import 'rodape.css';
 
 * {
   box-sizing: border-box;

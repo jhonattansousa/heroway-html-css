@@ -1,5 +1,5 @@
 .section-portfolio {
-    height: 500px;
+    height: 550px;
     background-color: #fff;
     display: flex;
 }
@@ -21,112 +21,89 @@
     height: 130px;
     margin: 5px 5px;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .section-portfolio > .container h3 {
     color: #2C3E50; 
-    height: 100px;
+    height: 0px;
     font-size: 30px;
     text-transform: uppercase;
+    margin: -30px;
 }
 
-.hr {
-    border: 0;
-    border-top: 1px solid #094CFA;
-}
-
-/*.star-portfolio {
-    margin: 50px 0;
-    color:  #2C3E50;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid  #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(180deg);
-  }
-.star-portfolio:before {
-    position: absolute;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid  #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(70deg);
-    content: '';
-    left: -50px;
-  }
-  
-.star-portfolio:after {
-    position: absolute;
-    display: block;
-    color: #2C3E50;
-    top: 3px;
-    left: -48px;
-    width: 0px;
-    height: 0px;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid  #2C3E50;
-    border-left: 50px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-    left: -50px
-}*/
-
-.star-contact {
-    position: relative;
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0 0 0;
     
+}
+
+.star > .line-star {
+    margin: 0 10px;
+    width: 110px;
+    height: 2px;
+    background-color: white;
+}    
+
+.fa, .fas {
+    font-weight: 900;
+}
+<style>
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+<style>
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     display: inline-block;
-    width: 0;
-    height: 0;
-    
-    margin-left: .9em;
-    margin-right: .9em;
-    margin-bottom: 1.2em;
-    
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #FC0;
-    border-left:   .3em solid transparent;
-  
-    /* Controlls the size of the stars. */
-    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0 0 0;
+}
+.section-portfolio > .container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+body, html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+<style>
+.fa-star:before {
+    content: "\f005";
 }
 
-.star-contact:before {
-    content: '';
-    
-    display: block;
-    width: 0;
-    height: 0;
-    
-    position: absolute;
-    top: .6em;
-    left: -1em;
-  
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #FC0;
-    border-left:   1em solid transparent;
-  
-    transform: rotate(-35deg);
-}
-  
-.star-contact:after {
-    content: '';
-      
-    display: block;
-    width: 0;
-    height: 0;
-      
-    position: absolute;
-    top: .6em;
-    left: -1em;
-    
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #FC0;
-    border-left:   1em solid transparent;
-    
-    transform: rotate(-35deg);
-}
-
-.star-contact:after {  
-    transform: rotate(35deg);
-}
-
-
-   
+.star > .line-star3 {
+    margin: 25px 10px;
+    width: 110px;
+    height: 2px;
+    background-color: #2C3E50;
+} 

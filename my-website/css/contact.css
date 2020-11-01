@@ -19,10 +19,11 @@
 
 .section-contact > .container h3 {
     font-size: 30px;
-    padding: 50px;
+    padding: 10px;
     text-transform: uppercase;
-    margin-bottom: -50px;
     color: #2C3E50;
+    margin-bottom: -50px;
+    
 }
 
 .section-contact > .container > .content {
@@ -31,13 +32,14 @@
 
     margin: 10px 50px;
     flex-direction: column; 
-    padding: 5px;
+    margin-bottom: -10px;
     align-self: flex-start
+    
 }
 
 .section-contact > .container > .content label {
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: -15px;
     color: #2C3E50;
 }
 
@@ -45,65 +47,108 @@
     color: #fff;
     border: 1px solid #fff;
     background-color: #D40A44;
+    font-weight: bold;
     padding: 15px 30px;
     border-radius: 5px;
+    margin: 28px;
 }
 
-.star-contact {
-    position: relative;
-    
+.section-contact > .container > img {
+    background-color:#fff;
+    color: #2C3E50;
+    width: 30px;
+    height: 50px;
+    margin: -70px 0;
+    margin-bottom: 10px;
+}   
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0 0 0;
+    padding: 30px;
+}
+
+.star > .line-star {
+    margin: 0 10px;
+    width: 110px;
+    height: 2px;
+    background-color: white;
+}    
+
+.fa, .fas {
+    font-weight: 900;
+}
+<style>
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+<style>
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     display: inline-block;
-    width: 0;
-    height: 0;
-    
-    margin-left: .9em;
-    margin-right: .9em;
-    margin-bottom: 1.2em;
-    
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid  #2C3E50;
-    border-left:   .3em solid transparent;
-  
-    /* Controlls the size of the stars. */
-    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 35px 0 0 0;
+    margin-bottom: -30px;
 }
 
-.star-contact:before {
-    content: '';
-    
-    display: block;
-    width: 0;
-    height: 0;
-    
-    position: absolute;
-    top: .6em;
-    left: -1em;
-  
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #2C3E50;
-    border-left:   1em solid transparent;
-  
-    transform: rotate(-35deg);
+body, html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
-  
-.star-contact:after {
-    content: '';
-      
-    display: block;
-    width: 0;
-    height: 0;
-      
-    position: absolute;
-    top: .6em;
-    left: -1em;
-    
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid  #2C3E50;
-    border-left:   1em solid transparent;
-    
-    transform: rotate(-35deg);
+<style>
+.fa-star:before {
+    content: "\f005";
 }
 
-.star-contact:after {  
-    transform: rotate(35deg);
+.section-contact > .container input {
+    width: 600px;
+    height: 20px;
+    margin: 25px 0;
+    border: none;
+    border-bottom: 1px solid#e3e3e3;
 }
+
+.section-contact > .container textarea {
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #e3e3e3;
+
+}
+
+.section-contact > .container > .content input,
+.section-contact > .container > .content label,
+.section-contact > .container > .content textarea {
+    display: block;
+}
+
+.star > .line-star2 {
+    margin: 0 10px;
+    width: 110px;
+    height: 2px;
+    background-color: #2C3E50;
+}    

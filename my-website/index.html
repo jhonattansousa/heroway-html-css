@@ -9,10 +9,10 @@
 
   <title>My Website</title>
 
-  <div class="star"></div>
-
   <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/798e8ccd47.js" crossorigin="anonymous"></script>>
 </head>
+
 
 <body>
   <nav class="nav">
@@ -32,33 +32,47 @@
     <div class="container">
       <img src="img/avataaars.svg" alt="Avatar" title="Avatar" />
       <h2>My Website</h2>
-      <div class="star-hero"></div>
-      <p>Graphic Artist - Web Designer - Illustrator</p>
+      <div class= "star">  
+        <div class="line-star"></div>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <div class="line-star"></div>
+      </div>
+      <p class="texto">Graphic Artist - Web Designer - Illustrator</p>
     </div>
   </section>
   
   <section class="section-portfolio">
     <div class="container">
       <h3>portfolio</h3>
-      <i class="star-contact"></i>
-      <span> <hr> <div class="star-portfolio"></div> </span> 
-      <span>
-       <img src="img/cabin.png" alt="Cabin" title="Cabin" /> 
-       <img src="img/cake.png" alt="Cake" title="Cake" /> 
-       <img src="img/circus.png" alt="circus" title="Circus" />
-      </span>
-      <span>
-        <img src="img/game.png" alt="game" title="Game" />
-        <img src="img/safe.png" alt="Layout" title="Layout" /> 
-        <img src="img/submarine.png" alt="Submarine" title="Submarine" />
-      </span>      
+        <div>
+          <div class= "star"> 
+            <div class="line-star3"></div>
+            <i class="fas fa-star" style="color: #2C3E50" aria-hidden="true"></i>
+            <div class="line-star3" ></div>
+          </div>
+        </div>
+          <span>
+            <img src="img/cabin.png" alt="Cabin" title="Cabin" /> 
+            <img src="img/cake.png" alt="Cake" title="Cake" /> 
+            <img src="img/circus.png" alt="circus" title="Circus" />
+           </span>
+           <span>
+             <img src="img/game.png" alt="game" title="Game" />
+             <img src="img/safe.png" alt="Layout" title="Layout" /> 
+             <img src="img/submarine.png" alt="Submarine" title="Submarine" />
+           </span>      
     </div>
   </section>
   
   <section class="section-about">
     <div class="container">
       <h3>About</h3>
-      <div class="star-about"></div>
+      <div class= "star">  
+        <div class="line-star"></div>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        </i>
+        <div class="line-star"></div>
+      </div>
       <div class="content">
         <div>
           Freelander is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional SASS stylesheets for easy customization.
@@ -74,7 +88,12 @@
   <section class="section-contact">
     <div class="container">
       <h3>contact me</h3>
-      <i class="star-contact"></i>
+      <div class= "star">  
+        <div class="line-star2"></div>
+        <i class="fas fa-star" style="color: #2C3E50" aria-hidden="true"></i>
+        </i>
+        <div class="line-star2" ></div>
+      </div> 
       <div class="content">
         <label>Name</label> 
         <input type="text" placeholder="" /> 
@@ -89,12 +108,36 @@
       </div>
       <div class="content">
         <label>Message</label>
-        <input type="text" placeholder=""/>
+        <textarea name="" id="text-id" cols="50" rows="7"></textarea> 
       </div>
       <button>Send</button>
     </div>
-    
   </section>
+  
+  <section class="section-social">
+    <div class="container">
+      <div class="location space">
+          <h2>LOCATION</h2>
+          <div>2215 John Daniel Drive Clark, MO 65243</div>
+      </div>
+      <div class="around space">
+          <h2>AROUND THE WEB</h2>
+          <div class="icons">
+              <div class="icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
+              <div class="icon"><i class="fab fa-twitter" aria-hidden="true"></i></div>
+              <div class="icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+              <div class="icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+          </div>
+      </div>
+      <div class="about space">
+          <h2>About Frelancer</h2>
+          <div>
+              Freelance is a free to use, MIT licensed BootStrap theme created by <a href="#">MyWebsite</a>
+          </div>
+      </div>
+  </div>
+  </section>
+
 </body>
 </html>
 

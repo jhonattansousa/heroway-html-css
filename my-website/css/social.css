@@ -1,0 +1,84 @@
+.section-social{
+    background-color: #2C3E50;
+    height: auto;
+}
+
+.section-social > .container{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.section-social > .container h2{
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-social > .container > .location{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-social > .container > .around{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.section-social > .container > .around .icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-social > .container > .around .icons div{
+    margin-right: 10px;
+}
+
+.section-social > .container > .about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-social > .container > .about a{
+    color: white;
+}
+
+.space{
+    padding: 20px;
+}
+
+.icon{
+    text-align: center;
+    width: 20px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+@media(max-width:599px){
+    .section-social > .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-social > .container > .around .icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-social > .container{
+        width: 100%;
+    }
+}
