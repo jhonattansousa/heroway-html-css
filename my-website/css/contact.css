@@ -100,7 +100,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-user agent stylesheet
+
 i {
     font-style: italic;
 }
@@ -152,3 +152,16 @@ body, html {
     height: 2px;
     background-color: #2C3E50;
 }    
+
+@media(max-width:599px){
+    .section-contact > .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-contact > .container{
+        width: 100%;
+    }
+}
